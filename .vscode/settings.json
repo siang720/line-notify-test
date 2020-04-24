@@ -1,3 +1,8 @@
 {
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "editor.autoIndent": false,
+    "editor.detectIndentation": false
 }

@@ -1,9 +1,11 @@
-require('dotenv').config();
-const express = require('express');
+require('dotenv').config()
+const express = require('express')
 const app = express()
-const lineNotifyRouter = require("./routes/line-notify")
-const callback = require("./routes/callback")
+const lineNotifyRouter = require('./routes/line-notify')
+const callback = require('./routes/callback')
+const notify = require('./routes/notify')
 
 app.use('/login/line_notify', lineNotifyRouter)
 app.use('/', callback)
-app.listen(3000);
+app.use('/notify', notify)
+app.listen(3000)
